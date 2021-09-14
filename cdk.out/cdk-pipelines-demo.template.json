@@ -253,16 +253,16 @@
                   "Version": "1"
                 },
                 "Configuration": {
-                  "Owner": "YOUR_GITHUB_USERNAME",
-                  "Repo": "cdk_pipelines_demo",
+                  "Owner": "harun-vit",
+                  "Repo": "aws-cdk-pipelines-demo",
                   "Branch": "main",
                   "OAuthToken": "{{resolve:secretsmanager:lambda_container_cdk_pipeline_github:SecretString:github::}}",
                   "PollForSourceChanges": false
                 },
-                "Name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo",
+                "Name": "harun-vit_aws-cdk-pipelines-demo",
                 "OutputArtifacts": [
                   {
-                    "Name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo_Source"
+                    "Name": "harun-vit_aws-cdk-pipelines-demo_Source"
                   }
                 ],
                 "RunOrder": 1
@@ -287,7 +287,7 @@
                 },
                 "InputArtifacts": [
                   {
-                    "Name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo_Source"
+                    "Name": "harun-vit_aws-cdk-pipelines-demo_Source"
                   }
                 ],
                 "Name": "Synth",
@@ -355,7 +355,7 @@
                 },
                 "InputArtifacts": [
                   {
-                    "Name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo_Source"
+                    "Name": "harun-vit_aws-cdk-pipelines-demo_Source"
                   }
                 ],
                 "Name": "ContainerBuild",
@@ -493,7 +493,7 @@
         "aws:cdk:path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Resource"
       }
     },
-    "ContainerPipelineSourceYOURGITHUBUSERNAMEcdkpipelinesdemoWebhookResource47B79951": {
+    "ContainerPipelineSourceharunvitawscdkpipelinesdemoWebhookResource95FDDC3B": {
       "Type": "AWS::CodePipeline::Webhook",
       "Properties": {
         "Authentication": "GITHUB_HMAC",
@@ -506,7 +506,7 @@
             "MatchEquals": "refs/heads/{Branch}"
           }
         ],
-        "TargetAction": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo",
+        "TargetAction": "harun-vit_aws-cdk-pipelines-demo",
         "TargetPipeline": {
           "Ref": "ContainerPipeline3FD96453"
         },
@@ -514,7 +514,7 @@
         "RegisterWithThirdParty": true
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/YOUR_GITHUB_USERNAME_cdk_pipelines_demo/WebhookResource"
+        "aws:cdk:path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/harun-vit_aws-cdk-pipelines-demo/WebhookResource"
       }
     },
     "ContainerPipelineBuildSynthCdkBuildProjectRole9BCF6C91": {
@@ -1072,7 +1072,7 @@
             {
               "Name": "IMAGE_TAG",
               "Type": "PLAINTEXT",
-              "Value": "latest-489111c09a60"
+              "Value": "latest-23cb382f6fce"
             },
             {
               "Name": "AWS_ACCOUNT_ID",

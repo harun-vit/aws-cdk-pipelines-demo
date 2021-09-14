@@ -370,10 +370,10 @@
                             "name": "Source",
                             "actions": [
                               {
-                                "name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo",
+                                "name": "harun-vit_aws-cdk-pipelines-demo",
                                 "outputArtifacts": [
                                   {
-                                    "name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo_Source"
+                                    "name": "harun-vit_aws-cdk-pipelines-demo_Source"
                                   }
                                 ],
                                 "actionTypeId": {
@@ -383,8 +383,8 @@
                                   "provider": "GitHub"
                                 },
                                 "configuration": {
-                                  "Owner": "YOUR_GITHUB_USERNAME",
-                                  "Repo": "cdk_pipelines_demo",
+                                  "Owner": "harun-vit",
+                                  "Repo": "aws-cdk-pipelines-demo",
                                   "Branch": "main",
                                   "OAuthToken": "{{resolve:secretsmanager:lambda_container_cdk_pipeline_github:SecretString:github::}}",
                                   "PollForSourceChanges": false
@@ -400,7 +400,7 @@
                                 "name": "Synth",
                                 "inputArtifacts": [
                                   {
-                                    "name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo_Source"
+                                    "name": "harun-vit_aws-cdk-pipelines-demo_Source"
                                   }
                                 ],
                                 "outputArtifacts": [
@@ -469,7 +469,7 @@
                                 "name": "ContainerBuild",
                                 "inputArtifacts": [
                                   {
-                                    "name": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo_Source"
+                                    "name": "harun-vit_aws-cdk-pipelines-demo_Source"
                                   }
                                 ],
                                 "actionTypeId": {
@@ -618,13 +618,13 @@
                     "id": "Source",
                     "path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source",
                     "children": {
-                      "YOUR_GITHUB_USERNAME_cdk_pipelines_demo": {
-                        "id": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo",
-                        "path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/YOUR_GITHUB_USERNAME_cdk_pipelines_demo",
+                      "harun-vit_aws-cdk-pipelines-demo": {
+                        "id": "harun-vit_aws-cdk-pipelines-demo",
+                        "path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/harun-vit_aws-cdk-pipelines-demo",
                         "children": {
                           "WebhookResource": {
                             "id": "WebhookResource",
-                            "path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/YOUR_GITHUB_USERNAME_cdk_pipelines_demo/WebhookResource",
+                            "path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/harun-vit_aws-cdk-pipelines-demo/WebhookResource",
                             "attributes": {
                               "aws:cdk:cloudformation:type": "AWS::CodePipeline::Webhook",
                               "aws:cdk:cloudformation:props": {
@@ -638,7 +638,7 @@
                                     "matchEquals": "refs/heads/{Branch}"
                                   }
                                 ],
-                                "targetAction": "YOUR_GITHUB_USERNAME_cdk_pipelines_demo",
+                                "targetAction": "harun-vit_aws-cdk-pipelines-demo",
                                 "targetPipeline": {
                                   "Ref": "ContainerPipeline3FD96453"
                                 },
@@ -1412,7 +1412,7 @@
                                         {
                                           "name": "IMAGE_TAG",
                                           "type": "PLAINTEXT",
-                                          "value": "latest-489111c09a60"
+                                          "value": "latest-23cb382f6fce"
                                         },
                                         {
                                           "name": "AWS_ACCOUNT_ID",
@@ -2053,7 +2053,7 @@
                                     {
                                       "Fn::ImportValue": "ecr-repo-name"
                                     },
-                                    ":latest-489111c09a60"
+                                    ":latest-23cb382f6fce"
                                   ]
                                 ]
                               }
@@ -2064,7 +2064,7 @@
                                 "Arn"
                               ]
                             },
-                            "description": "Function generated on 2021-09-14 08:34:37.461567",
+                            "description": "Function generated on 2021-09-14 09:36:20.452203",
                             "memorySize": 1024,
                             "packageType": "Image",
                             "timeout": 30
