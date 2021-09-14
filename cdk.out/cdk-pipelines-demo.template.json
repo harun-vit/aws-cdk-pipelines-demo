@@ -1072,7 +1072,7 @@
             {
               "Name": "IMAGE_TAG",
               "Type": "PLAINTEXT",
-              "Value": "latest-23cb382f6fce"
+              "Value": "latest-218ca3f56658"
             },
             {
               "Name": "AWS_ACCOUNT_ID",
