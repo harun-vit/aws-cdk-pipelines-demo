@@ -1,7 +1,7 @@
 {
   "version": "13.0.0",
   "files": {
-    "bbc31f4058062f496d00fb293cf78c07a1ecbb28e31c219b2285d66a11436a9a": {
+    "56fd82f1ebd76278d25d3d8b2669d8c3e2089d615dcd855b5271b521b3e3432f": {
       "source": {
         "path": "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "bbc31f4058062f496d00fb293cf78c07a1ecbb28e31c219b2285d66a11436a9a.json",
+          "objectKey": "56fd82f1ebd76278d25d3d8b2669d8c3e2089d615dcd855b5271b521b3e3432f.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
