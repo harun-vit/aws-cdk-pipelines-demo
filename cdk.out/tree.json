@@ -1412,7 +1412,7 @@
                                         {
                                           "name": "IMAGE_TAG",
                                           "type": "PLAINTEXT",
-                                          "value": "latest-f6a5e9ac7435"
+                                          "value": "latest-eb17d984966f"
                                         },
                                         {
                                           "name": "AWS_ACCOUNT_ID",
@@ -2053,7 +2053,7 @@
                                     {
                                       "Fn::ImportValue": "ecr-repo-name"
                                     },
-                                    ":latest-f6a5e9ac7435"
+                                    ":latest-eb17d984966f"
                                   ]
                                 ]
                               }
@@ -2064,7 +2064,7 @@
                                 "Arn"
                               ]
                             },
-                            "description": "Function generated on 2021-09-14 01:21:27.054952",
+                            "description": "Function generated on 2021-09-14 08:33:57.602252",
                             "memorySize": 1024,
                             "packageType": "Image",
                             "timeout": 30
